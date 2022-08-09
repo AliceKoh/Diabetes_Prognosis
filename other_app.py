@@ -4,7 +4,7 @@ from PIL import Image
 def run_other_app():
     st.text("")
     st.subheader("Mental Health:")
-    Text_Mental = ('<p style="font-family:Arial;color:black;font-size:20px;">Positive mental health allows people to realize their full potential and cope with the stresses of life better. It is said that depression increases the risk of physical health problems, particularly long-lasting conditions like diabetes, heart disease, and stroke. Life might not be rosy but stay possitive makes life easier and the ride worthwhile.</p>')
+    Text_Mental = ('<p style="font-family:Arial;color:black;font-size:16px;">Positive mental health allows people to realize their full potential and cope with the stresses of life better. It is said that depression increases the risk of physical health problems, particularly long-lasting conditions like diabetes, heart disease, and stroke. Life might not be rosy but stay possitive makes life easier and the ride worthwhile.</p>')
     st.markdown(Text_Mental,unsafe_allow_html=True)
     c1,c2=st.columns([1.5,1])
     with c1:
