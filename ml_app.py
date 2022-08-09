@@ -21,14 +21,14 @@ result = {'age':'age',
 
 def run_ml_app():
     st.subheader("What is Machine Learning Algorithms?")
-    Text_data ='<p style="font-family:Arial;color:black;font-size:18px;">The prognosis of Diabetes is generated based on Machine Learning Algorithms. According to IBM, Machine Learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. It is about training the machine to think like human to predict the future.</p>'
+    Text_data ='<p style="font-family:Arial;color:black;font-size:16px;">The prognosis of Diabetes is generated based on Machine Learning Algorithms. According to IBM, Machine Learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. It is about training the machine to think like human to predict the future.</p>'
     st.markdown(Text_data,unsafe_allow_html=True)
     
 #--Dataset
     st.markdown("### Dataset:")
-    Text_data ='<p style="font-family:Arial;color:black;font-size:18px;">The dataset used to train machine learning was from UCI Machine Learning Repository. It contains the data of 520 patients sign and symptoms of newly diabetic or would be diabetic patient.</p>'
+    Text_data ='<p style="font-family:Arial;color:black;font-size:16px;">The dataset used to train machine learning was from UCI Machine Learning Repository. It contains the data of 520 patients sign and symptoms of newly diabetic or would be diabetic patient.</p>'
     st.markdown(Text_data,unsafe_allow_html=True)
-    Text_variable ='<p style="font-family:Arial;color:black;font-size:18px;">There are total of 16variables in the data set such as:- age, gender,polyuria, polydipsia, sudden_weight_loss, weakness, polyphagia, genital_thrush, visual_blurring, itching, moody, delayed_healing, partial_paresis, muscle_stiffness, alopecia, obesity</p>'
+    Text_variable ='<p style="font-family:Arial;color:black;font-size:16px;">There are total of 16variables in the data set such as:- age, gender,polyuria, polydipsia, sudden_weight_loss, weakness, polyphagia, genital_thrush, visual_blurring, itching, moody, delayed_healing, partial_paresis, muscle_stiffness, alopecia, obesity</p>'
     st.markdown(Text_variable,unsafe_allow_html=True)
 
     with st.expander("[ Definition ]"):
