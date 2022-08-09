@@ -3,7 +3,7 @@ from PIL import Image
 import pandas as pd
 
 def run_home_app():
-    Text_Intro ='<p style="font-family:Bellota;color:black;font-size:18px;"> .......the health beats of your heart🧡. A little sugar makes you lovely and sweet. Too much sugar however might make you bitter as it is associate with weight gain even in people who exercise regulary. This increasing your risk of getting diabetes" </p>'
+    Text_Intro ='<p style="font-family:Bellota;color:black;font-size:16px;"> .......the health beats of your heart🧡. A little sugar makes you lovely and sweet. Too much sugar however might make you bitter as it is associate with weight gain even in people who exercise regulary. This increasing your risk of getting diabetes" </p>'
     st.markdown(Text_Intro,unsafe_allow_html=True)
 
     img = Image.open("ImageIntro.jpg")
