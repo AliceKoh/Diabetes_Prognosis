@@ -3,7 +3,8 @@ from PIL import Image
 import os
 import pandas as pd
 import numpy as np
-from pycaret.classification import *
+from sklearn.ensemble import RandomForestClassifier
+import pickle
 
 def run_prognosis_app():
 
@@ -11,11 +12,16 @@ def run_prognosis_app():
     answer2 = answer.drop(["name","BMI",'muscle_stiffness', 'alopecia', 'obesity','smoke','alcohol'], axis=1)
 
 #--Loan model
-    loaded_model = load_model("model/Final_Model")
+    filename = 'ModelDiabetes.pkl'
+    #loaded_model = load_model("model/Final_Model")
+    with open(filename,'rb') as file:
+    pickle_model=pickle.load (file)
   
 #--Prognosis
-    prediction = loaded_model.predict(answer2)
-    pred_prob = loaded_model.predict_proba(answer2)
+    #prediction = loaded_model.predict(answer2)
+    #pred_prob = loaded_model.predict_proba(answer2)
+    prediction = pickle_model.predict(answer2)
+    pred_prob = pickle_model.predict_proba(answer2)
     
     chance_list =["low","moderate","high"]
     risk_list =["Negative","positive"]
