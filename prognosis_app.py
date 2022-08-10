@@ -15,7 +15,7 @@ def run_prognosis_app():
     filename = 'ModelDiabetes.pkl'
     #loaded_model = load_model("model/Final_Model")
     with open(filename,'rb') as file:
-    pickle_model=pickle.load (file)
+        pickle_model=pickle.load (file)
   
 #--Prognosis
     #prediction = loaded_model.predict(answer2)
