@@ -30,7 +30,7 @@ def run_quest_app():
 	    state.alcohol = 99.0
 
 #--Question(1-4)	
-	st.subheader("**Diabetes Questionnaires**")	
+	st.subheader("**Diabetes Questionnaires-SectionA**")	
 	c1,c2,c3=st.columns([2,0.5,2])
 	with c1:
 		fname = st.text_input("Enter Name:",max_chars=15)
@@ -58,7 +58,6 @@ def run_quest_app():
 		pass
 	else:
 		if st.checkbox("CONTINUE",key="quest1"):
-		
 	#---Question (5-6)
 			if fname=="":
 				st.warning("Dear Stranger, please provide all information.")
@@ -69,6 +68,7 @@ def run_quest_app():
 			elif state.height==1:
 				st.warning(f"Dear {fname}, please provide all information.")
 			else:
+				st.subheader("**Diabetes Questionnaires-SectionB**")
 				c1,c2,c3=st.columns([2.5,2,0.5])
 				with c1:	
 					polyuria = st.radio("5) Do you experience excessive_urine?",["-","No","Yes"],key="Q06")
