@@ -375,6 +375,7 @@ def run_quest_app():
 					answer = pd.DataFrame(result,index=[0])
 					answer.to_csv('data/answer.csv',index=False)
 					answer= pd.read_csv('data/answer.csv')
+					st.write(answer)
 
 			#--Run Prognosis Result-----
 				#st.subheader("**Prognosis Result**")
