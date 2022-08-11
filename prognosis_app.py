@@ -8,7 +8,7 @@ import pickle
 
 def run_prognosis_app():
 
-    answer = pd.read_csv('data/answer.csv')
+    answer = pd.read_csv('data/answers.csv')
     answer2 = answer.drop(["name","BMI",'muscle_stiffness', 'alopecia', 'obesity','smoke','alcohol'], axis=1)
 
 #--Loan model
