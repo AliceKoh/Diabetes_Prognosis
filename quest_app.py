@@ -374,8 +374,9 @@ def run_quest_app():
 					#Need to convert to dataframe to save as csv
 					answer = pd.DataFrame(result,index=[0])
 					answer.to_csv('data/answer.csv',index=False)
+					answer= pd.read_csv('data/answer.csv')
 
 			#--Run Prognosis Result-----
 				#st.subheader("**Prognosis Result**")
 				#with st.expander("CONTINUE"):
-					run_prognosis_app()
+					#run_prognosis_app()
