@@ -13,7 +13,6 @@ def run_prognosis_app():
 
 #--Loan model
     filename = 'model/ModelDiabetes.pkl'
-    #loaded_model = load_model("model/Final_Model")
     with open(filename,'rb') as file:
         pickle_model=pickle.load (file)
   
