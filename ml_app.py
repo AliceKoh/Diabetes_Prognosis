@@ -165,7 +165,7 @@ def run_ml_app():
         with c1:
             img = Image.open("chart/ChartMuscle2.jpg")
             st.image(img,use_column_width=True)
-            img = Image.open("chart/Charthair2.jpg")
+            img = Image.open("chart/ChartHair2.jpg")
             st.image(img,use_column_width=True)
         with c2:
             img = Image.open("chart/ChartObesity2.jpg")
