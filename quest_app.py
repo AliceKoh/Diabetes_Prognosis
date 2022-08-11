@@ -376,6 +376,6 @@ def run_quest_app():
 					answer.to_csv('data/answer.csv',index=False)
 
 			#--Run Prognosis Result-----
-				st.subheader("**Prognosis Result**")
-				with st.expander("CONTINUE"):
+				#st.subheader("**Prognosis Result**")
+				#with st.expander("CONTINUE"):
 					run_prognosis_app()
