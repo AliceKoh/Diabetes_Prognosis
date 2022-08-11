@@ -377,7 +377,7 @@ def run_quest_app():
 					answers= pd.read_csv('data/answers.csv')
 					st.write(answers)
 
-			#--Run Prognosis Result-----
-				#st.subheader("**Prognosis Result**")
-				#with st.expander("CONTINUE"):
-					#run_prognosis_app()
+				#--Run Prognosis Result-----
+					st.subheader("**Prognosis Result**")
+					with st.expander("CONTINUE"):
+						run_prognosis_app()
