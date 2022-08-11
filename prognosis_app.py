@@ -12,7 +12,7 @@ def run_prognosis_app():
     answer2 = answer.drop(["name","BMI",'muscle_stiffness', 'alopecia', 'obesity','smoke','alcohol'], axis=1)
 
 #--Loan model
-    filename = 'ModelDiabetes.pkl'
+    filename = 'model/ModelDiabetes.pkl'
     #loaded_model = load_model("model/Final_Model")
     with open(filename,'rb') as file:
         pickle_model=pickle.load (file)
