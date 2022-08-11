@@ -378,6 +378,6 @@ def run_quest_app():
 					st.write(answers)
 
 				#--Run Prognosis Result-----
-					st.subheader("**Prognosis Result**")
-					with st.expander("CONTINUE"):
-						run_prognosis_app()
+				st.subheader("**Prognosis Result**")
+				with st.expander("CONTINUE"):
+					run_prognosis_app()
