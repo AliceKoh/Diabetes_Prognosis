@@ -77,7 +77,7 @@ def run_prognosis_app():
             if age > 40:
                 Text_action = "You are doing good. Continue to maintain a good health. But since you are above 40, it is good to go for blood glucose test as a prevention afford."
             else:
-                Text_action = "You are doing good. Continue to maintain a good health. 
+                Text_action = "You are doing good. Continue to maintain a good health." 
         elif chance =="high":
             img = Image.open("predict/ArrowHit.jpg")
             st.image(img,use_column_width=True)
