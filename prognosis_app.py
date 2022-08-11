@@ -82,7 +82,7 @@ def run_prognosis_app():
             img = Image.open("predict/ArrowHit.jpg")
             st.image(img,use_column_width=True)
             Text_action = "You are strongly encourage to go for blood glucose test to accertain your risk and if you need medication."
-        elif chance =="Moderate" and risk_list=="negetive":
+        elif chance =="Moderate" and risk_list=="negative":
             img = Image.open("predict/ArrowBad.jpg")
             st.image(img,use_column_width=True)
             Text_action = "You are negetive. However your risk level is close to 50%, it is good to go for blood glucose test to accertain your risk level."
