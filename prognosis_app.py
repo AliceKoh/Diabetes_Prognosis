@@ -76,14 +76,20 @@ def run_prognosis_app():
             st.image(img,use_column_width=True)
             if age > 40:
                 Text_action = "You are doing good. Continue to maintain a good health. But since you are above 40, it is good to go for blood glucose test as a prevention afford."
+            else:
+                Text_action = "You are doing good. Continue to maintain a good health. 
         elif chance =="high":
             img = Image.open("predict/ArrowHit.jpg")
             st.image(img,use_column_width=True)
             Text_action = "You are strongly encourage to go for blood glucose test to accertain your risk and if you need medication."
+        elif chance =="Moderate" and risk_list=="negetive":
+            img = Image.open("predict/ArrowBad.jpg")
+            st.image(img,use_column_width=True)
+            Text_action = "You are negetive. However your risk level is close to 50%, it is good to go for blood glucose test to accertain your risk level."
         else:
             img = Image.open("predict/ArrowBad.jpg")
             st.image(img,use_column_width=True)
-            Text_action = "You are encourage to go for blood glucose test to accertain your risk level."
+            Text_action = "You are encourage to go for blood glucose test to accertain your risk level as your risk is above 50%."
     with c3:
         st.warning(f"###### Our Recommendation:")
         st.markdown(Text_action,unsafe_allow_html=True)
