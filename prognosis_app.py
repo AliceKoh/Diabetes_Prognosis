@@ -10,7 +10,8 @@ def run_prognosis_app():
 
     answer = pd.read_csv('data/answers.csv')
     answer2 = answer.drop(["name","BMI",'muscle_stiffness', 'alopecia', 'obesity','smoke','alcohol'], axis=1)
-
+    st.write(answer2)
+    
 #--Loan model
     filename = 'model/ModelDiabetes.pkl'
     with open(filename,'rb') as file:
