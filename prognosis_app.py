@@ -131,6 +131,10 @@ def run_prognosis_app():
                 st.image(img,use_column_width=True)
             st.markdown("_______________________")
 
+    st.write('No changes of answer upon prognosis. You can try again by clicking the below link')
+    st.info(" Click to try again --> (https://alicekoh-diabetes-prognosis-streamlit-app-jslwb3.streamlitapp.com/")
+    st.markdown("__________________________________")
+    
     st.subheader("Prognosis Evaluation")
     Text_Eval = ('<p style="font-family:Arial;color:black;font-size:18px;">How accurate is the Diabetes prognosis? Do you have Diabetes? </p>')
     st.markdown(Text_Eval,unsafe_allow_html=True)
@@ -156,11 +160,11 @@ def run_prognosis_app():
     st.text("<*><*><*><*><*><*><*><*><*>")
     st.info(f"##### Dear {name}, Thank you for your information. This will help us improve our machine learning accuracy for future prognosis.")
 
-    st.write('---The End---')
-
     #--Concate to master
     df = pd.read_csv('data/master.csv')
     master = pd.concat([df,answer], axis=0)
     master.to_csv('data/master.csv',index=False)
+    
+    st.write("---The End---")
 
     
