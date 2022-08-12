@@ -157,7 +157,7 @@ def run_ml_app():
             img = Image.open("chart/ChartGenitalHealHungry2.jpg")
             st.image(img,use_column_width=True)
             st.text("")
-            st.markdown("When a patient has only thrush or difficult to health, the chart shows negetive correlation. But when a patient has thrush, delayed healing and polyphagia at the same time, the risk of diabetes increases for both man and woman.")
+            st.markdown("When a patient has only thrush or difficult to heal, the chart shows negetive correlation. But when a patient has thrush, delayed healing and polyphagia at the same time, the risk of diabetes increases for both man and woman.")
 
         st.markdown("Below variables alopecia and muscle_stiffness were dropped from the dataset as analysis shown contradicting result from the general known facts. There is a possibility of not well define or fail to describe the symptoms to patients which result in distortion in data collected. I dropped them so that they will not affect the machine learning. In the future if there is more concrete information available, these information will be added to the database to further increae the accuracy.")
          
