@@ -131,7 +131,7 @@ def run_prognosis_app():
                 st.image(img,use_column_width=True)
             st.markdown("_______________________")
 
-    st.write('No changes of answer upon prognosis. You can try again by clicking the below link')
+    st.write('Please do no change the answer upon prognosis. However, you can try again by clicking the below link')
     st.info(" Click to try again --> (https://alicekoh-diabetes-prognosis-streamlit-app-jslwb3.streamlitapp.com/")
     st.markdown("__________________________________")
     
